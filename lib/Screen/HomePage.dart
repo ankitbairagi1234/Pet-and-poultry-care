@@ -204,7 +204,7 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _getAppBar(),
+      // appBar: _getAppBar(),
       body: _isNetworkAvail
           ? RefreshIndicator(
               color: colors.primary,

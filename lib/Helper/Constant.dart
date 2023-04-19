@@ -16,7 +16,8 @@ const int perPage = 10;
 // final String baseUrl = 'http://inlizer.com/app/v1/api/';
 // final String baseUrl ='https://rekoindia.com/app/v1/api/';
 // final String baseUrl= 'https://developmentalphawizz.com/reko/app/v1/api/';
-final String baseUrl= 'https://developmentalphawizz.com/Ashwini_Amruttulya/app/v1/api/';
+// final String baseUrl= 'https://developmentalphawizz.com/Ashwini_Amruttulya/app/v1/api/';
+final String baseUrl= 'https://developmentalphawizz.com/vetcare/app/v1/api/';
 
 // final String jwtKey = "78084f1698c9fcff5a668b68dcd103db39be2605";
 final String jwtKey = "78084f1698c9fcff5a668b68dcd103db39be2605";

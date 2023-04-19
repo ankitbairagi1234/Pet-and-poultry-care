@@ -24,6 +24,7 @@ import 'HomePage.dart';
 import 'NotificationLIst.dart';
 import 'Sale.dart';
 import 'Search.dart';
+import 'newregistration.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -190,10 +191,11 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
           children: [
             HomePage(),
             AllCategory(),
-            Sale(),
-            Cart(
-              fromBottom: true,
-            ),
+            RegistrationScreen(),
+            // Sale(),
+            // Cart(
+            //   fromBottom: true,
+            // ),
             MyProfile(),
           ],
         ),
@@ -210,7 +212,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
     else if (_selBottom == 2)
       title = getTranslated(context, 'OFFER');
     else if (_selBottom == 3)
-      title = getTranslated(context, 'MYBAG');
+      title = getTranslated(context, 'PROFILE');
     else if (_selBottom == 4) title = getTranslated(context, 'PROFILE');
 
     return AppBar(
@@ -374,57 +376,57 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
                       ),
                 text: _selBottom == 2 ? getTranslated(context, 'SALE') : null,
               ),
+              // Tab(
+              //   icon: Selector<UserProvider, String>(
+              //     builder: (context, data, child) {
+              //       return Stack(
+              //         children: [
+              //           Center(
+              //             child: _selBottom == 3
+              //                 ? SvgPicture.asset(
+              //                     imagePath + "cart01.svg",
+              //                     color: colors.primary,
+              //                   )
+              //                 : SvgPicture.asset(
+              //                     imagePath + "cart.svg",
+              //                     color: colors.primary,
+              //                   ),
+              //           ),
+              //           (data != null && data.isNotEmpty && data != "0")
+              //               ? new Positioned.directional(
+              //                   bottom: _selBottom == 3 ? 6 : 20,
+              //                   textDirection: Directionality.of(context),
+              //                   end: 0,
+              //                   child: Container(
+              //                     decoration: BoxDecoration(
+              //                         shape: BoxShape.circle,
+              //                         color: colors.primary),
+              //                     child: new Center(
+              //                       child: Padding(
+              //                         padding: EdgeInsets.all(3),
+              //                         child: new Text(
+              //                           data,
+              //                           style: TextStyle(
+              //                               fontSize: 7,
+              //                               fontWeight: FontWeight.bold,
+              //                               color: Theme.of(context)
+              //                                   .colorScheme
+              //                                   .white),
+              //                         ),
+              //                       ),
+              //                     ),
+              //                   ),
+              //                 )
+              //               : Container()
+              //         ],
+              //       );
+              //     },
+              //     selector: (_, homeProvider) => homeProvider.curCartCount,
+              //   ),
+              //   text: _selBottom == 3 ? getTranslated(context, 'CART') : null,
+              // ),
               Tab(
-                icon: Selector<UserProvider, String>(
-                  builder: (context, data, child) {
-                    return Stack(
-                      children: [
-                        Center(
-                          child: _selBottom == 3
-                              ? SvgPicture.asset(
-                                  imagePath + "cart01.svg",
-                                  color: colors.primary,
-                                )
-                              : SvgPicture.asset(
-                                  imagePath + "cart.svg",
-                                  color: colors.primary,
-                                ),
-                        ),
-                        (data != null && data.isNotEmpty && data != "0")
-                            ? new Positioned.directional(
-                                bottom: _selBottom == 3 ? 6 : 20,
-                                textDirection: Directionality.of(context),
-                                end: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: colors.primary),
-                                  child: new Center(
-                                    child: Padding(
-                                      padding: EdgeInsets.all(3),
-                                      child: new Text(
-                                        data,
-                                        style: TextStyle(
-                                            fontSize: 7,
-                                            fontWeight: FontWeight.bold,
-                                            color: Theme.of(context)
-                                                .colorScheme
-                                                .white),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              )
-                            : Container()
-                      ],
-                    );
-                  },
-                  selector: (_, homeProvider) => homeProvider.curCartCount,
-                ),
-                text: _selBottom == 3 ? getTranslated(context, 'CART') : null,
-              ),
-              Tab(
-                icon: _selBottom == 4
+                icon: _selBottom == 3
                     ? SvgPicture.asset(
                         imagePath + "profile01.svg",
                         color: colors.primary,

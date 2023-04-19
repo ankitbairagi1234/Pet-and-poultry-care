@@ -447,36 +447,33 @@ class StateProfile extends State<MyProfile> with TickerProviderStateMixin {
       shrinkWrap: true,
       physics: BouncingScrollPhysics(),
       children: <Widget>[
-        CUR_USERID == "" || CUR_USERID == null
-            ? Container()
-            : _getDrawerItem(getTranslated(context, 'MY_ORDERS_LBL')!,
-                'assets/images/pro_myorder.svg'),
+        // CUR_USERID == "" || CUR_USERID == null
+        //     ? Container()
+        //     : _getDrawerItem(getTranslated(context, 'MY_ORDERS_LBL')!,
+        //         'assets/images/pro_myorder.svg'),
         // CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
-        CUR_USERID == "" || CUR_USERID == null
-            ? Container()
-            : _getDrawerItem(getTranslated(context, 'MANAGE_ADD_LBL')!,
-                'assets/images/pro_address.svg'),
+        // CUR_USERID == "" || CUR_USERID == null
+        //     ? Container()
+        //     : _getDrawerItem(getTranslated(context, 'MANAGE_ADD_LBL')!,
+        //         'assets/images/pro_address.svg'),
         //CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
-        CUR_USERID == "" || CUR_USERID == null
-            ? Container()
-            : _getDrawerItem(getTranslated(context, 'MYWALLET')!,
-                'assets/images/pro_wh.svg'),
+        // CUR_USERID == "" || CUR_USERID == null
+        //     ? Container()
+        //     : _getDrawerItem(getTranslated(context, 'MYWALLET')!,
+        //         'assets/images/pro_wh.svg'),
         // CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
-        CUR_USERID == "" || CUR_USERID == null
-            ? Container()
-            : _getDrawerItem(getTranslated(context, 'MYTRANSACTION')!,
-                'assets/images/pro_th.svg'),
+        // CUR_USERID == "" || CUR_USERID == null
+        //     ? Container()
+        //     : _getDrawerItem(getTranslated(context, 'MYTRANSACTION')!,
+        //         'assets/images/pro_th.svg'),
         // CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
-        _getDrawerItem(getTranslated(context, 'CHANGE_THEME_LBL')!,
-            'assets/images/pro_theme.svg'),
-        // _getDivider(),
-        _getDrawerItem(getTranslated(context, 'CHANGE_LANGUAGE_LBL')!,
-            'assets/images/pro_language.svg'),
+        // _getDrawerItem(getTranslated(context, 'CHANGE_THEME_LBL')!,
+        //     'assets/images/pro_theme.svg'),
+        // // _getDivider(),
+        // _getDrawerItem(getTranslated(context, 'CHANGE_LANGUAGE_LBL')!,
+        //     'assets/images/pro_language.svg'),
         //  CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
-        CUR_USERID == "" || CUR_USERID == null
-            ? Container()
-            : _getDrawerItem(getTranslated(context, 'CHANGE_PASS_LBL')!,
-                'assets/images/pro_pass.svg'),
+
         // _getDivider(),
         // CUR_USERID == "" || CUR_USERID == null || !refer
         //     ? Container()
@@ -489,6 +486,7 @@ class StateProfile extends State<MyProfile> with TickerProviderStateMixin {
         _getDrawerItem(getTranslated(context, 'ABOUT_LBL')!,
             'assets/images/pro_aboutus.svg'),
         // _getDivider(),
+
         _getDrawerItem(getTranslated(context, 'CONTACT_LBL')!,
             'assets/images/pro_aboutus.svg'),
         // _getDivider(),
@@ -507,6 +505,10 @@ class StateProfile extends State<MyProfile> with TickerProviderStateMixin {
         _getDrawerItem(getTranslated(context, 'SHARE_APP')!,
             'assets/images/pro_share.svg'),
         // CUR_USERID == "" || CUR_USERID == null ? Container() : _getDivider(),
+        CUR_USERID == "" || CUR_USERID == null
+            ? Container()
+            : _getDrawerItem(getTranslated(context, 'CHANGE_PASS_LBL')!,
+            'assets/images/pro_pass.svg'),
         CUR_USERID == "" || CUR_USERID == null
             ? Container()
             : _getDrawerItem(getTranslated(context, 'LOGOUT')!,

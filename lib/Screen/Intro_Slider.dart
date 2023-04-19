@@ -42,11 +42,11 @@ class _GettingStartedScreenState extends State<IntroSlider>
             title: getTranslated(context, 'TITLE2_LBL'),
             description: getTranslated(context, 'DISCRIPTION2'),
           ),
-          Slide(
-            imageUrl: 'assets/images/introimage_c.png',
-            title: getTranslated(context, 'TITLE3_LBL'),
-            description: getTranslated(context, 'DISCRIPTION3'),
-          ),
+          // Slide(
+          //   imageUrl: 'assets/images/introimage_c.png',
+          //   title: getTranslated(context, 'TITLE3_LBL'),
+          //   description: getTranslated(context, 'DISCRIPTION3'),
+          // ),
         ];
       });
     });
@@ -116,15 +116,15 @@ class _GettingStartedScreenState extends State<IntroSlider>
                         style: Theme.of(context).textTheme.headline5!.copyWith(
                             color: Theme.of(context).colorScheme.fontColor,
                             fontWeight: FontWeight.bold))),
-                Container(
-                  padding: EdgeInsetsDirectional.only(
-                      top: 30.0, start: 15.0, end: 15.0),
-                  child: Text(slideList[index].description,
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                          color: Theme.of(context).colorScheme.fontColor,
-                          fontWeight: FontWeight.normal)),
-                ),
+                // Container(
+                //   padding: EdgeInsetsDirectional.only(
+                //       top: 30.0, start: 15.0, end: 15.0),
+                //   child: Text(slideList[index].description,
+                //       textAlign: TextAlign.center,
+                //       style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                //           color: Theme.of(context).colorScheme.fontColor,
+                //           fontWeight: FontWeight.normal)),
+                // ),
               ],
             ),
           );

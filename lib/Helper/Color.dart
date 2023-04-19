@@ -17,7 +17,7 @@ extension colors on ColorScheme {
     },
   );
 
-  static const Color primary = Color(0xff033c44);
+  static const Color primary = Color(0xffF55F05);
   static const Color secondary = Color(0xff000000);
 
   Color get btnColor =>
@@ -40,7 +40,7 @@ extension colors on ColorScheme {
 
   static Color darkIcon = Color(0xff9B9B9B);
 
-  static const Color grad1Color = Color(0xff033c44);
+  static const Color grad1Color = Color(0xffF55F05);
   static const Color grad2Color = Color(0xffFF6363);
   static const Color lightWhite2 = Color(0xffEEF2F3);
 
